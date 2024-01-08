@@ -40,7 +40,7 @@ console.log(num);
 
 */
 
-//FUNCTION DECLARTION
+/* //FUNCTION DECLARTION
 
 const age1 = calcAge1(1991);
 
@@ -61,3 +61,15 @@ const calcAge2 = function(birthYear){
 const age2 = calcAge2(1992)
 
 console.log(age1 , age2)
+
+*/
+
+// FUNCTION
+function calcAge1(birthYear){
+  return 2037 - birthYear;
+  }
+
+//ARROW FUNCTION
+const calcAge3 = birthYear => 2037 - birthYear
+const age3 = calcAge3(1997)
+console.log(age3)
