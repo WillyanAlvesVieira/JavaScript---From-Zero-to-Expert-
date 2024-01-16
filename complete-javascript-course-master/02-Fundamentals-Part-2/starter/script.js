@@ -133,29 +133,46 @@ console.log(yearsUntilRetirement(1950, 'Mike'))
 
 //Coding Exercise
 
-const calcAverage = (score1, score2, score3) => {
-  const sum = score1 + score2 + score3;
-  const averageScore = sum / 3;
-  return averageScore;
-  };
+/*
+const calcAverage = (a, b, c) => (a + b + c) /3;
   
-  const dolphinsScores = calcAverage (7, 7 , 7);
-  const koalasScores = calcAverage(79, 95, 92);
-  
+  let scoreDolphins = calcAverage (80, 90, 80);
+  let scoreKoalas = calcAverage(5, 5 , 5);
+  console.log(scoreDolphins, scoreKoalas)
 
-  const checkWinner = (dolphinsScores, koalasScores) => {
-    if (dolphinsScores >= 2 * koalasScores) {
-      console.log(`Dolphins win (${dolphinsScores} vs. ${koalasScores})`);
-    } else if (koalasScores >= 2 * dolphinsScores) {
-      console.log(`Koalas win (${koalasScores} vs. ${dolphinsScores})`);
+  const checkWinner = (avgDolphins, avgKoalas) => {
+    
+    if (avgDolphins >= 2 * avgKoalas) {
+      console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+      console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
     } else {
       console.log("It's a draw!");
     }
   };
 
-  
+  checkWinner(scoreDolphins, scoreKoalas);
+  checkWinner(576, 111);
 
-  checkWinner(dolphinsScores, koalasScores);
+  //test 2;
+  scoreDolphins = calcAverage (85, 54, 41);
+  scoreKoalas = calcAverage(23, 34 , 27);
+  console.log(scoreDolphins, scoreKoalas);
+  checkWinner(scoreDolphins, scoreKoalas)
+*/
 
+const friend1 = 'Michael';
+const frined2 = 'Steven';
+const friend3 = 'Peter';
 
-  
+const friends = ['Michael', 'Steven', 'Peter',  ]
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length -1])
