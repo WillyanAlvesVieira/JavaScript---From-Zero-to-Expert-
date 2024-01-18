@@ -159,7 +159,7 @@ const calcAverage = (a, b, c) => (a + b + c) /3;
   scoreKoalas = calcAverage(23, 34 , 27);
   console.log(scoreDolphins, scoreKoalas);
   checkWinner(scoreDolphins, scoreKoalas)
-*/
+
 
 const friend1 = 'Michael';
 const frined2 = 'Steven';
@@ -200,6 +200,52 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]),
 calcAge(years[years.length -1])];
+
 console.log(ages)
+
+*/
+
+const friends = ['Michael', 'Steven', 'Peter',];
+
+//add elements
+const newLenght = friends.push('Jay');
+console.log(friends);
+console.log(newLenght);
+
+//remove elements
+friends.unshift('John');
+console.log(friends)
+
+friends.pop(); //nãp precisa passar valor sempre remove o ultimo;
+const popped = friends.pop();
+console.log(popped);
+console.log(friends)
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob')); //não tem bob então retorna falso
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')){
+  console.log('You have a friend called Steven');
+}
+
+
+
+const calcTip = function (bill){
+  return bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length -1])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[bills.length -1] + tips[tips.length -1]]
+console.log(bills, tips, totals);
 
 
