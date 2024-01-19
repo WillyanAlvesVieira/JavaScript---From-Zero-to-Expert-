@@ -109,21 +109,21 @@ console.log(fruitProcessor(2,3));
 
 */
 
- /* const calcAge = function(birthYear){
-  return 2037 - birthYear
+/* const calcAge = function(birthYear){
+ return 2037 - birthYear
 }
 
 function yearsUntilRetirement (birthYear, fistName) {
-  const age = calcAge(birthYear)
-  const retirement = 65 - age;
+ const age = calcAge(birthYear)
+ const retirement = 65 - age;
 
-  if(retirement > 0){
-    console.log(`${fistName} retires in ${retirement} years`)
-    return retirement
-  } else{
-    console.log(`${fistName} has already retired`)
-    return -1
-  }
+ if(retirement > 0){
+   console.log(`${fistName} retires in ${retirement} years`)
+   return retirement
+ } else{
+   console.log(`${fistName} has already retired`)
+   return -1
+ }
 
 }
 console.log(yearsUntilRetirement(1989, 'Willyan'));
@@ -134,12 +134,11 @@ console.log(yearsUntilRetirement(1950, 'Mike'))
 //Coding Exercise
 
 /*
-const calcAverage = (a, b, c) => (a + b + c) /3;
+/* const calcAverage = (a, b, c) => (a + b + c) /3;
   
   let scoreDolphins = calcAverage (80, 90, 80);
   let scoreKoalas = calcAverage(5, 5 , 5);
-  console.log(scoreDolphins, scoreKoalas)
-
+  
   const checkWinner = (avgDolphins, avgKoalas) => {
     
     if (avgDolphins >= 2 * avgKoalas) {
@@ -152,15 +151,16 @@ const calcAverage = (a, b, c) => (a + b + c) /3;
   };
 
   checkWinner(scoreDolphins, scoreKoalas);
-  checkWinner(576, 111);
+  //repassamos os parametros aos avgDolphins e avgKoalas com o resultado da média
+ 
 
   //test 2;
   scoreDolphins = calcAverage (85, 54, 41);
   scoreKoalas = calcAverage(23, 34 , 27);
   console.log(scoreDolphins, scoreKoalas);
   checkWinner(scoreDolphins, scoreKoalas)
-
-
+*/
+/* 
 const friend1 = 'Michael';
 const frined2 = 'Steven';
 const friend3 = 'Peter';
@@ -203,7 +203,6 @@ calcAge(years[years.length -1])];
 
 console.log(ages)
 
-*/
 
 const friends = ['Michael', 'Steven', 'Peter',];
 
@@ -247,5 +246,85 @@ const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length -1])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[bills.length -1] + tips[tips.length -1]]
 console.log(bills, tips, totals);
+
+
+const jonasArray = [
+  'Jonas',
+  'Willyan',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter','Steven']
+]
+
+const jonas = {
+   firstName: 'Jonas',
+   lastName: 'Willyan',
+   age: 2037 - 1991,
+   job: 'teacher',
+   friends: ['Michael', 'Peter','Steven']
+};
+ */
+
+
+/* const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Willyan',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter','Steven']
+};
+
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first'+ nameKey]);
+console.log(jonas['last' + nameKey]);
+
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@wav_lll';
+console.log(jonas);
+
+/* const interestedIn = prompt('What do you want to know about Jonas ? Choose between fistName, lastName, age, job and friends');
+
+if(jonas[interestedIn]){ //if true ! cant be undefined :D
+console.log(jonas[interestedIn]); //than execute this line
+  }else{ //else this
+    console.log('Wrote request ! Choose between fistName, lastName, age, job and friends')
+  } */
+
+//Challenge
+//Wrote a sentence like "Jonas has 3 friends", and his best friend
+//is called Michael."
+
+/* console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best \
+friend is called ${jonas.friends[0]}`);
+ */
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Alves',
+  birthYear: 2000,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicense: true,
+
+/*   calcAge: function(birthYear){
+    return 2037 - birthYear;
+  } */
+  
+  calcAge: function(){
+    return 2037 - this.birthYear; //reverenciar o objeto dentro dele mesmo.
+  }
+
+};
+
+console.log(jonas.calcAge());
+
+
+/* console.log(jonas['calcAge'](this.birthYear))
+ */
 
 
