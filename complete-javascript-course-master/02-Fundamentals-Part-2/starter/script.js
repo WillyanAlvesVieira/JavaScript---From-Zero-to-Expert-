@@ -303,6 +303,9 @@ console.log(jonas[interestedIn]); //than execute this line
 friend is called ${jonas.friends[0]}`);
  */
 
+/*
+
+//OBJECTS METHODS
 const jonas = {
   firstName: 'Jonas',
   lastName: 'Alves',
@@ -310,21 +313,67 @@ const jonas = {
   job: 'teacher',
   friends: ['Michael', 'Peter', 'Steven'],
   hasDriversLicense: true,
-
-/*   calcAge: function(birthYear){
-    return 2037 - birthYear;
-  } */
   
   calcAge: function(){
-    return 2037 - this.birthYear; //reverenciar o objeto dentro dele mesmo.
-  }
+    this.age =  2037 - this.birthYear;//reverenciar o objeto dentro dele mesmo.
+    return this.age;
+  }, // sempre lembrar de colocar virgula pois ainda estamos dentro do objeto
+
+getSummary: function(){
+  return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, 
+  and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+}
 
 };
 
 console.log(jonas.calcAge());
+console.log(jonas.age);
+
+//challenge
+
+console.log(jonas.getSummary())
+
+*/
 
 
-/* console.log(jonas['calcAge'](this.birthYear))
- */
+
+
+
+const mark = {
+  fullName: 'Mark Miller',
+  mass: '78',
+  height:'1.69',
+  calcBMI: function(){
+   this.bmi = this.mass / (this.height * this.height);
+   return this.bmi;
+  }
+  
+}
+
+const john = {
+  fullName: 'John Smith',
+  mass: '50',
+  height:'1.20',
+  calcBMI: function(){
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+
+  
+}
+
+
+mark.calcBMI();
+john.calcBMI();
+console.log(mark.bmi);
+console.log(john.bmi)
+
+if(mark.bmi > john.bmi){
+  console.log(`${mark.fullName}'s BMI (${mark.bmi} is higher than
+    ${john.fullName}'s BMI ${john.bmi})`)
+} else if(john.bmi > mark.bmi){
+console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than
+${mark.fullName}'s BMI ${mark.bmi}`)
+}
 
 
