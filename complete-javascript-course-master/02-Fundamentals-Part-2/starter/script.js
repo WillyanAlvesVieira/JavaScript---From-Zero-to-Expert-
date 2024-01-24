@@ -402,6 +402,55 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 // console.log(jonas[4])
 // console.log(jonas[5]) does not exist 
 
+// const jonasArray = [
+//   'Jonas',
+//   'Willyan',
+//   2037 - 1991,
+//   'teacher',
+//   2060 - 1002,
+//   ['Michael', 'Peter','Steven'],
+//   true
+// ];
+
+// const types = []
+
+
+// for(let i = 0; i < jonasArray.length ; i++){
+//   //reading from jonas array
+//   console.log(jonasArray[i],  jonasArray[i]);
+
+//   //Filling types Array
+//   // types[i] = typeof jonasArray[i];
+//     types.push(typeof jonasArray[i]);
+// }
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for(let i = 0; i  < years.length; i++){
+//   ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+// //CONTINUE AND BREAK
+
+//  console.log('---- ONLY STRINGS -----')
+// for(let i = 0; i < jonasArray.length ; i++){
+//   if(typeof jonasArray[i] !== 'string') continue; 
+  
+//   console.log(jonasArray[i], typeof jonasArray[i]);
+// }
+
+// console.log('---- BREAK WITH A NUMBER -----')
+// for(let i = 0; i < jonasArray.length ; i++){
+//   if(typeof jonasArray[i] !== 'number') break; 
+  
+//   console.log(jonasArray[i], typeof jonasArray[i]);
+// }
+
+//Print elements BackWards, de trás para frente dentro do array
+
 const jonasArray = [
   'Jonas',
   'Willyan',
@@ -409,44 +458,19 @@ const jonasArray = [
   'teacher',
   2060 - 1002,
   ['Michael', 'Peter','Steven'],
-  true
+  
 ];
 
-const types = []
-
-
-for(let i = 0; i < jonasArray.length ; i++){
-  //reading from jonas array
-  console.log(jonasArray[i],  jonasArray[i]);
-
-  //Filling types Array
-  // types[i] = typeof jonasArray[i];
-  types.push(typeof jonasArray[i]);
-  
-}
-console.log(types);
-
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
-
-for(let i = 0; i  < years.length; i++){
-  ages.push(2037 - years[i]);
-}
-console.log(ages);
-
-//CONTINUE AND BREAK
-
- console.log('---- ONLY STRINGS -----')
-for(let i = 0; i < jonasArray.length ; i++){
-  if(typeof jonasArray[i] !== 'string') continue; 
-  
-  console.log(jonasArray[i], typeof jonasArray[i]);
+for(let i = jonasArray.length -1; i >= 0; i--){
+  console.log([jonasArray[i]])
 }
 
-console.log('---- BREAK WITH A NUMBER -----')
-for(let i = 0; i < jonasArray.length ; i++){
-  if(typeof jonasArray[i] !== 'number') break; 
-  
-  console.log(jonasArray[i], typeof jonasArray[i]);
+//LOOP EXERCISE
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`----- Starting Exercise ${exercise}`);
 }
 
+for (let rep = 1; rep < 6; rep++) {
+  console.log(`Lifting weight repetition ${rep}`);
+}
