@@ -451,26 +451,90 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 
 //Print elements BackWards, de trás para frente dentro do array
 
-const jonasArray = [
-  'Jonas',
-  'Willyan',
-  2037 - 1991,
-  'teacher',
-  2060 - 1002,
-  ['Michael', 'Peter','Steven'],
+// const jonasArray = [
+//   'Jonas',
+//   'Willyan',
+//   2037 - 1991,
+//   'teacher',
+//   2060 - 1002,
+//   ['Michael', 'Peter','Steven'],
   
-];
+// ];
 
-for(let i = jonasArray.length -1; i >= 0; i--){
-  console.log([jonasArray[i]])
-}
+// for(let i = jonasArray.length -1; i >= 0; i--){
+//   console.log([jonasArray[i]])
+// }
 
-//LOOP EXERCISE
+// //LOOP EXERCISE
 
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`----- Starting Exercise ${exercise}`);
-}
+// for (let exercise = 1; exercise < 5; exercise++) {
+//   console.log(`----- Starting Exercise ${exercise}`);
 
-for (let rep = 1; rep < 6; rep++) {
-  console.log(`Lifting weight repetition ${rep}`);
+// for (let rep = 1; rep < 6; rep++) {
+//   console.log(`Exercise ${exercise} Lifting weight repetition ${rep}`);
+// }
+// }
+
+
+// const weekDaysAndExercises = [{
+//   day: "Segunda",
+//   exercises : []
+// }, 
+
+// {
+//     day: "Terça",
+//     exercises: [{
+//     name: "Ombro",
+//     execution: "Para fazer a terça..."
+//   }, {
+//     name: "Triceps",
+//     execution: "Para fazer o biceps na terça..."
+//   },
+//   {
+//     name: "Banana",
+//     execution: "Para fazer o biceps na terça..."
+//   }]
+  
+// }]
+
+// for (let i = 0; i < weekDaysAndExercises.length; i++) {
+//   const day = weekDaysAndExercises[i].day;
+//   console.log(day);
+
+//   if(!weekDaysAndExercises[i].exercises) {
+//     continue
+//     } else if (!weekDaysAndExercises[i].exercises.length){
+//     console.log("cai aqui e nao tem length")
+//     continue;
+//     } else {
+
+//       for (let s = 0;  s < weekDaysAndExercises[i].exercises.length; s++) {
+//         const exerciseName = weekDaysAndExercises[i].exercises[s].name;
+        
+    
+//         console.log(exerciseName);
+//       }
+//     }
+//     }
+
+
+// for(let rep = 1; rep <= 10; rep++){
+//   console.log(`Lifiting weights repetition ${rep}`);
+// }
+
+//while vai rodar enquanto a condição for verdadeira
+
+// let rep = 10;
+// while(rep <= 10){
+//   console.log(`Lifiting weights repetition ${rep}`);
+//   rep++
+// }
+
+
+//Exercise while loop
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while(dice !== 6){
+console.log(`You Rolled a ${dice}`);
+dice = Math.trunc(Math.random() * 6) + 1; //executa novamente o código para se cair 6 ele para o looping
 }
