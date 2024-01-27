@@ -532,9 +532,45 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 
 
 //Exercise while loop
-let dice = Math.trunc(Math.random() * 6) + 1;
+// let dice = Math.trunc(Math.random() * 6) + 1;
 
-while(dice !== 6){
-console.log(`You Rolled a ${dice}`);
-dice = Math.trunc(Math.random() * 6) + 1; //executa novamente o código para se cair 6 ele para o looping
+// while(dice !== 6){
+// console.log(`You Rolled a ${dice}`);
+// dice = Math.trunc(Math.random() * 6) + 1; //executa novamente o código para se cair 6 ele para o looping
+// if(dice === 6) console.log('Loop is about to end, You got a 6')
+// }
+
+//CHALLENGE BILLS ARRAY AND LOOP 
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
+
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++){
+  const tip = calcTip(bills[i])
+  tips.push(tip)
+  totals.push(tip + bills[i])
+}
+
+console.log(bills, tips, totals);
+
+
+const calcAverage = function(arr){
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++){
+    sum += arr[i]
+    // sum = sum + arr[i]
+  }
+  
+return sum + arr.length //arr.length é o comprimento do array logo 6 + 3 = 9
+
+}
+
+console.log (calcAverage([2, 3, 1])); // da 9 porque ele soma o comprimento
+console.log(calcAverage(totals));
+console.log(calcAverage(tips))
