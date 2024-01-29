@@ -1,4 +1,5 @@
-'use strict';
+"use strict"
+  
 
 /*
 let hasDriversLicense = false;
@@ -11,7 +12,6 @@ if (hasDriversLicense) console.log('I can drive :D');
 //const private = 534; uso restrito do javaScript
  
 */
-
 
 /*
 //FUNCTIONS SECTION
@@ -63,7 +63,6 @@ const age2 = calcAge2(1992)
 console.log(age1 , age2)
 
 */
-
 
 //FUNCTION EXPRESSION
 
@@ -265,7 +264,6 @@ const jonas = {
 };
  */
 
-
 /* const jonas = {
   firstName: 'Jonas',
   lastName: 'Willyan',
@@ -395,12 +393,11 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 
 //LOOPING ARRAYS
 
-
 // console.log(jonas[0])
 // console.log(jonas[1])
 // ...
 // console.log(jonas[4])
-// console.log(jonas[5]) does not exist 
+// console.log(jonas[5]) does not exist
 
 // const jonasArray = [
 //   'Jonas',
@@ -413,7 +410,6 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 // ];
 
 // const types = []
-
 
 // for(let i = 0; i < jonasArray.length ; i++){
 //   //reading from jonas array
@@ -437,15 +433,15 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 
 //  console.log('---- ONLY STRINGS -----')
 // for(let i = 0; i < jonasArray.length ; i++){
-//   if(typeof jonasArray[i] !== 'string') continue; 
-  
+//   if(typeof jonasArray[i] !== 'string') continue;
+
 //   console.log(jonasArray[i], typeof jonasArray[i]);
 // }
 
 // console.log('---- BREAK WITH A NUMBER -----')
 // for(let i = 0; i < jonasArray.length ; i++){
-//   if(typeof jonasArray[i] !== 'number') break; 
-  
+//   if(typeof jonasArray[i] !== 'number') break;
+
 //   console.log(jonasArray[i], typeof jonasArray[i]);
 // }
 
@@ -458,7 +454,7 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 //   'teacher',
 //   2060 - 1002,
 //   ['Michael', 'Peter','Steven'],
-  
+
 // ];
 
 // for(let i = jonasArray.length -1; i >= 0; i--){
@@ -475,11 +471,10 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 // }
 // }
 
-
 // const weekDaysAndExercises = [{
 //   day: "Segunda",
 //   exercises : []
-// }, 
+// },
 
 // {
 //     day: "Terça",
@@ -494,7 +489,7 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 //     name: "Banana",
 //     execution: "Para fazer o biceps na terça..."
 //   }]
-  
+
 // }]
 
 // for (let i = 0; i < weekDaysAndExercises.length; i++) {
@@ -510,13 +505,11 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 
 //       for (let s = 0;  s < weekDaysAndExercises[i].exercises.length; s++) {
 //         const exerciseName = weekDaysAndExercises[i].exercises[s].name;
-        
-    
+
 //         console.log(exerciseName);
 //       }
 //     }
 //     }
-
 
 // for(let rep = 1; rep <= 10; rep++){
 //   console.log(`Lifiting weights repetition ${rep}`);
@@ -530,7 +523,6 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 //   rep++
 // }
 
-
 //Exercise while loop
 // let dice = Math.trunc(Math.random() * 6) + 1;
 
@@ -540,37 +532,34 @@ ${mark.fullName}'s BMI ${mark.bmi}`)
 // if(dice === 6) console.log('Loop is about to end, You got a 6')
 // }
 
-//CHALLENGE BILLS ARRAY AND LOOP 
+//CHALLENGE BILLS ARRAY AND LOOP
 
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
-
+};
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
-for (let i = 0; i < bills.length; i++){
-  const tip = calcTip(bills[i])
-  tips.push(tip)
-  totals.push(tip + bills[i])
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
 }
 
 console.log(bills, tips, totals);
 
-
-const calcAverage = function(arr){
+const calcAverage = function (arr) {
   let sum = 0;
-  for (let i = 0; i < arr.length; i++){
-    sum += arr[i]
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
     // sum = sum + arr[i]
   }
-  
-return sum + arr.length //arr.length é o comprimento do array logo 6 + 3 = 9
 
-}
+  return sum + arr.length; //arr.length é o comprimento do array logo 6 + 3 = 9
+};
 
-console.log (calcAverage([2, 3, 1])); // da 9 porque ele soma o comprimento
+console.log(calcAverage([2, 3, 1])); // da 9 porque ele soma o comprimento
 console.log(calcAverage(totals));
-console.log(calcAverage(tips))
+console.log(calcAverage(tips));
