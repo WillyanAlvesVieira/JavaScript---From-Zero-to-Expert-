@@ -7,4 +7,4 @@ O objetivo deste diário não é apenas documentar meu progresso, mas também cr
 Estrutura do Diário
 Dias de Estudo: Cada pasta neste repositório representa um dia específico de estudo. Dentro de cada pasta, você encontrará arquivos Markdown que detalham as atividades do dia
 
-Códigos e Exemplos: Junto com o diário, compartilho trechos de código, exemplos práticos e desafios que explorei durante o estudo
+Códigos e Exemplos: Junto com o diário, compartilho trechos de código, exemplos práticos e desafios que explorei durante o estudo,
