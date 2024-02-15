@@ -18,6 +18,9 @@ body {
   /* background-color: #60b347; */
 }
 
+body::after{
+  background-color: rgb(3, 144, 40);
+}
 /* LAYOUT */
 header {
   position: relative;
